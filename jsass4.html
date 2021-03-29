@@ -1,0 +1,60 @@
+
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <title> 
+       
+    </title> 
+</head> 
+  
+<body> 
+    <h1 style="color: green"> 
+        Content Compiler 
+    </h1> 
+      
+    <b> 
+        How to measure time taken by a function 
+        to execute using JavaScript? 
+    </b> 
+      
+    <p> 
+        Click on the button to measure the time 
+        taken by the function. The output would 
+        be displayed on the console. 
+    </p> 
+      
+    <button onclick="measurePerformance()"> 
+        Load asynchronously 
+    </button> 
+<button onclick="measurePerformance1()"> 
+        Load synchronously 
+    </button> 
+      
+    <script type="text/javascript"> 
+        function measurePerformance() { 
+            start = performance.now(); 
+            exampleFunction(); 
+            end = performance.now(); 
+            timeTaken = end - start; 
+            document.write("Function took " + 
+                    timeTaken + " milliseconds"); 
+        } 
+  
+        function exampleFunction() { 
+            for (i = 0; i < 1000; i++) { 
+                <!--document.write('Hello Geeks'); -->
+            } 
+        } 
+function measurePerformance1() { 
+            start = performance.now(); 
+            exampleFunction(); 
+            end = performance.now(); 
+            timeTaken = end - start; 
+            document.write("Function took " + 
+                    timeTaken + " milliseconds"); 
+        } 
+    </script> 
+</body> 
+  
+</html>

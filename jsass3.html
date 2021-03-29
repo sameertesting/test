@@ -1,0 +1,70 @@
+<html>
+<head>
+<script>
+function fun3()
+{
+var v1=(document.getElementById("ans").value);
+var v2=(document.getElementById("ans1").value);
+var v3=(document.getElementById("ans2").value);
+var v4=(document.getElementById("Gen").value);
+document.write("Invoice:\n");
+
+document.write("Customer Name:");
+document.write(v1+"\n");
+document.write("Check-in date");
+document.write(v2+"\n");
+document.write("Check-out date");
+document.write(v3+"\n");
+document.write("Room Type:");
+document.write(v4+"\n");
+document.write("Rate/days:");
+document.write("8"+"\n");
+document.write("GST@12%"+"\n");
+document.write("1920");
+document.write("Total Payable");
+document.write("17920");
+
+}
+
+</script>
+</head>
+<body>
+<form>
+<table>
+<tr>
+<td>
+<h1>Hotel Management System</h1></td></tr>
+
+<tr>
+<td>Customer Name</td>
+<td>
+<input type="text" id="ans" name="name"/>
+</td>
+</tr>
+<tr>
+<td>Check-in date</td>
+<td>
+<input type="text" id="ans1" name="name" /></td></tr>
+<tr>
+<td>Check-out date</td>
+<td>
+<input type="text" id="ans2" name="name" /></td></tr>
+<tr>
+<td>Room Type:</td>
+<td><select id="Gen" name="Gen">
+<option value="Normal">Normal..</option>
+<option value="AC">AC</option>
+<option value="Lux">Lux</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<br>
+<button type="button" onclick="fun3()">Generate invoice</button></td>
+<td>
+<br>
+<button type="reset" value="Reset">Reset</button>
+</table>
+</body>
+</html>

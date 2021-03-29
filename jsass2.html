@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function fun1()
+{
+var v1=2142515+850796+528964+322777+294375;
+document.getElementById("ans").value=v1;
+}
+function fun2()
+{
+var v1="Brazil ";
+var v2="UK";
+document.getElementById("ans1").value=v1.concat(v2);
+}
+function fun3()
+{
+var v1="5.48, ";
+var v2="5.02, ";
+var v3="1.31, ,";
+var v4="2.85, ";
+var v5="14.15";
+document.getElementById("ans2").value=v1.concat(v2,v3,v4,v5);
+}
+</script>
+</head>
+<body>
+<form>
+<h4>COVID</h4>
+<button type="button" onclick="fun1()">Total COVID cases</button>
+<input type="text" id="ans" value="" />
+<button type="button" onclick="fun2()">no new covid cases</button>
+<input type="text" id="ans1" value="" />
+<button type="button" onclick="fun3()">Death %</button>
+<input type="text" id="ans2" value="" />
+</body>
+</html>
